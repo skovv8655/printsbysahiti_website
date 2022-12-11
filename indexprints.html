@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Prints By Sahiti</title>
+<link rel="icon" type="image/x-icon" href="faviconprintsbysahiti.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h4,h5 {font-family: "Raleway", sans-serif}
+h3{font-family: "Raleway", sans-serif; font-weight: bolder; color: black;}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+marquee{
+      font-size: 20px;
+      font-weight: 800;
+      font-family: "Raleway", sans-serif}
+</style>
+<body class=" w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+ <img src="faviconprintsbysahiti.png" alt="logo" width="200px" height="200px" class= "center">
+ <h3 class="w3-padding-64 w3-center" class= "center"><b>PRINTS<br>BY SAHITI</b> </h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a> 
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding"> Prints By Sahiti</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-medium w3-pale-red" style="margin-top:30px">
+    <marquee behavior=”scroll” direction=”down”>☆ﾟ･｡･:*:･ﾟHOLIDAY SALE 15% OFF SELECTED PRINTS with(*) ☆ﾟ･｡･:*:･ﾟ
+    </marquee>
+  </div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="fanwithpurple.jpg" style="width:100%" onclick="onClick(this)" alt=" (1) taken during the summer at the design museum of berlin, germany">
+      <img src="jennynoodles.jpg" style="width:100%" onclick="onClick(this)" alt=" (2)celebrating a birthday away from home">
+      <img src="lillebakery.jpg" style="width:100%" onclick="onClick(this)" alt=" (3) lille bakery in reffen; copenhagen">
+      
+      
+    </div>
+
+    <div class="w3-third">
+      <img src="babylon.jpg" style="width:100%" onclick="onClick(this)" alt=" (4)clubbing at 2am">
+      <img src="winetherese.jpg" style="width:100%" onclick="onClick(this)" alt=" (5) enjoying the last few days over sunset">
+      <img src="guinesscake3.png" style="width:100%" onclick="onClick(this)" alt="'(6) let me make you a guiness cake!'">
+      
+    </div>
+    
+    <div class="w3-third">
+      <img src="morgenstole.jpg" style="width:100%" onclick="onClick(this)" alt=" (7) vegan food buffet on a rainy day @ morgenstole">
+      <img src="farmersmarket.jpg" style="width:100%" onclick="onClick(this)" alt=" (8) sunday farmers market!"> 
+      <img src="muse2.jpeg" style="width:100%" onclick="onClick(this)" alt=" (9) laia at the museum">
+    </div>
+  </div>
+<br>
+<br>
+
+  <!-- 
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="fanwithpurple.jpg" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="babylon.jpg" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="morgenstole.jpg" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  Pagination -->
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-hide-small w3-display-topright">×</span>
+    <div class="w3-modal-content w3-hide-small w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+  <footer class="w3-container w3-padding-32 w3-pale-red w3-center w3-pale-red" id="pricing">  
+    <div class="w3-row-padding">
+      <div class=" w3-center">
+        <h3>PRICING</h3>
+        <p>choose a bundle package to shop from and select your images based on following prompts</p>      
+      </div>
+  
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-black w3-xlarge w3-padding-32">basic</li>
+        <li class="w3-padding-16">bundle of hand selected 15 photographs</li>
+        <li class="w3-padding-16">digital + printed prints (4x6)</li>
+        <li class="w3-padding-16">personalized note</li>
+        <li class="w3-padding-16">
+          <h2>$ 10</h2>
+          <span class="w3-opacity"> + shipping/plus applicable taxes </span>
+        </li>
+        <li class="w3-pale-red w3-padding-24">
+          <a href="getthisbasic.html"><button class="w3-button w3-white w3-padding-large">get this</button></a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="w3-half">
+      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-black w3-xlarge w3-padding-32">pro</li>
+        <li class="w3-padding-16">bundle of hand selected 30 photographs</li>
+        <li class="w3-padding-16">digital + printed prints (4x6) </li>
+        <li class="w3-padding-16">2 prints--printed to custom size </li>
+        <li class="w3-padding-16">
+          <h2>$ 25</h2>
+          <span class="w3-opacity">+ shipping/plus applicable taxes</span>
+        </li>
+        <li class="w3-pale-red w3-padding-24">
+          <a href="getthispro.html"><button class="w3-button w3-white w3-padding-large">get this</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- About section -->
+  <div class="w3-container w3-light-gray w3-center w3-padding-32" id="about">
+    <h3><b>ABOUT ME</b></h3>
+    <img class="w3-circle w3-border width="200px" height="200px"" src="Sahiti Kovvuri Headshot.png" alt="me">
+    
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Sahiti Kovvuri</h4>
+      <p>👋🏽 im sahiti! a graduating data analytics student (with a minor in sociology) @ baruch college. 
+          throughout my time in college i have picked up skills and experience in user research, 
+          design thinking strategies, data analysis and visualization, and digital marketing.
+          my shop is filled with images ive taken during my travels in copenhagen, denmark, while i was spending time with friends and
+          family in my hometown nyc and much more!</p>
+      <a href="https://sahitikovvuri.my.canva.site/"target="_blank"><button class="w3-button w3-grey w3-padding-large w3-justify w3-margin-top w3-margin-bottom">check out my design porfolio</button></a>
+          <hr class="w3-opacity">
+          
+</div>
+</div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>contact me!</b></h4>
+      <p>do you want to get in touch and ask about my photos? Fill out the form and fill me in with the details :)</p>
+      <form method="post" action="contactthnkyou.html">
+        <div class="w3-section">
+          <label>name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  
+  <!-- Footer -->
+  
+  <footer>
+      <br>
+    Copyright &copy; 2022 Sahiti Kovvuri<br>
+    <a href="mailto:sahik1903@gmail.com">sahik1903@gmail.com</a>			
+</footer>
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
